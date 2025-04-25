@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "types": ["pinia-plugin-persistedstate"]
+  },
   "files": [],
   "references": [
     {
