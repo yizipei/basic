@@ -9,8 +9,6 @@ import type {
 } from 'axios'
 import qs from 'qs'
 import { config } from './serviceConfig'
-import { Toast } from 'vant'
-// import { ElMessage } from 'element-plus'
 
 // 从配置文件中提取相关配置
 const { base_url, request_timeout, result_code } = config
