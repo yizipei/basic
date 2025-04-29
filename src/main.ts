@@ -10,6 +10,10 @@ import router from './router'
 
 const app = createApp(App)
 
+app.config.errorHandler = (err) => {
+  console.error(err)
+}
+
 const pinia = createPinia()
 // pinia 持久化插件
 pinia.use(piniaPluginPersistedstate)

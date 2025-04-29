@@ -3,6 +3,7 @@ import { storeToRefs } from 'pinia'
 import { useCounterStore } from '@/stores/counter'
 import { onMounted } from 'vue'
 import request from '@/service/request'
+import router from '@/router'
 
 const counterStore = useCounterStore()
 const { count } = storeToRefs(counterStore)
@@ -29,13 +30,11 @@ onMounted(() => {
 
 <template>
   <div>{{ count }}</div>
-  <van-button type="primary" @click="increment">add</van-button>
+  <van-button type="primary" @click="router.push({ name: 'TemplateSyntax' })">
+    template syntax
+  </van-button>
   <van-button type="success" @click="getData">成功按钮</van-button>
   <van-button type="warning">警告按钮</van-button>
 </template>
 
-<style lang="less" scoped>
-div {
-  // font-size: 30px;
-}
-</style>
+<style lang="less" scoped></style>

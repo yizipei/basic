@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "types": ["pinia-plugin-persistedstate"]
+    "types": ["pinia-plugin-persistedstate"],
+    "jsx": "preserve",
+    "jsxImportSource": "vue"
   },
   "files": [],
   "references": [
