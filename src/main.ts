@@ -7,12 +7,14 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 import App from './App.vue'
 import router from './router'
+import globalProperties from './config/globalProperties'
 
 const app = createApp(App)
 
 app.config.errorHandler = (err) => {
   console.error(err)
 }
+app.use(globalProperties)
 
 const pinia = createPinia()
 // pinia 持久化插件
