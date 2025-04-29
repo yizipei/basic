@@ -12,13 +12,28 @@ export default {
       id: '123',
     }
 
+    const className = 'qq'
+    const classValue = 'ww'
+    const clickFn = (event: Event) => {
+      event.preventDefault()
+      console.log('clickFn')
+    }
+
     return () => (
       <div>
         {txt.value}
         <div v-html={demoHtml.value}></div>
         <div id={id}>{id}</div>
         <div {...objectAttrs}>attrs{objectAttrs}</div>
-        <van-button type="primary">test</van-button>
+        <van-button type="primary">{Date.now()}</van-button>
+        <van-button
+          {...{ [className]: [classValue] }}
+          onClick={clickFn}
+          type="danger"
+          style="color:blue;"
+        >
+          danger
+        </van-button>
       </div>
     )
   },
