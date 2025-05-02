@@ -1,7 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, type Router } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
-const router = createRouter({
+const router: Router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
@@ -21,6 +21,31 @@ const router = createRouter({
       path: '/template-syntax',
       name: 'TemplateSyntax',
       component: () => import('@/views/TemplateSyntax.vue'),
+    },
+    {
+      path: '/reactivity',
+      name: 'ReactivityView',
+      component: () => import('@/views/ReactivityView.vue'),
+    },
+    {
+      path: '/computed',
+      name: 'ComputedView',
+      component: () => import('@/views/ComputedView.vue'),
+    },
+    {
+      path: '/class-and-style',
+      name: 'ClassAndStyle',
+      component: () => import('@/views/ClassAndStyle/ClassAndStyle.vue'),
+    },
+    {
+      path: '/form-view',
+      name: 'FormView',
+      component: () => import('@/views/FormView.vue'),
+    },
+    {
+      path: '/watch-view',
+      name: 'WatchView',
+      component: () => import('@/views/WatchView.vue'),
     },
   ],
 })

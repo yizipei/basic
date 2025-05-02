@@ -18,6 +18,12 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     VanButton: typeof import('vant/es')['Button']
+    VanCheckbox: typeof import('vant/es')['Checkbox']
+    VanCheckboxGroup: typeof import('vant/es')['CheckboxGroup']
+    VanField: typeof import('vant/es')['Field']
+    VanForm: typeof import('vant/es')['Form']
+    VanTag: typeof import('vant/es')['Tag']
+    VantButton: typeof import('vant/es')['tButton']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
 }

@@ -17,6 +17,7 @@ export default defineConfig(({ command, mode }) => {
   return {
     server: {
       port: 6001,
+      host: '0.0.0.0',
       proxy: {
         [env.VITE_BASE_SERVE]: {
           target: env.VITE_BASE_URL,
@@ -31,9 +32,11 @@ export default defineConfig(({ command, mode }) => {
     plugins: [
       vue(),
       vueJsx(),
-      vueDevTools(),
+      // vueDevTools(),
       AutoImport({
+        imports: ['vue', 'vue-router', 'pinia'],
         resolvers: [VantResolver()],
+        packagePresets: ['es-toolkit'],
       }),
       Components({
         resolvers: [VantResolver()],
@@ -49,13 +52,14 @@ export default defineConfig(({ command, mode }) => {
         plugins: [
           postcsspxtoviewport8plugin({
             unitToConvert: 'px',
-            viewportWidth: (file) => {
-              let num = 750
-              if (file.indexOf('van') > 0) {
-                num = 375
-              }
-              return num
-            },
+            // viewportWidth: (file) => {
+            //   let num = 750
+            //   if (file.indexOf('van') > 0) {
+            //     num = 375
+            //   }
+            //   return num
+            // },
+            viewportWidth: 375,
             unitPrecision: 5, // 单位转换后保留的精度
             propList: ['*'], // 能转化为vw的属性列表
             viewportUnit: 'vw', // 希望使用的视口单位
