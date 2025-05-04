@@ -37,6 +37,7 @@ export default defineConfig(({ command, mode }) => {
         imports: ['vue', 'vue-router', 'pinia'],
         resolvers: [VantResolver()],
         packagePresets: ['es-toolkit'],
+        dirs: ['./src/composables/**'],
       }),
       Components({
         resolvers: [VantResolver()],

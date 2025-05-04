@@ -47,6 +47,23 @@ const router: Router = createRouter({
       name: 'WatchView',
       component: () => import('@/views/WatchView.vue'),
     },
+    {
+      path: '/components-view',
+      name: 'ComponentsView',
+      component: () => import('@/views/ComponentsView/ComponentsView.vue'),
+    },
+    //LifeCycleView
+    {
+      path: '/life-cycle-view',
+      name: 'LifeCycleView',
+      component: () => import('@/views/LifeCycleView/LifeCycleView.vue'),
+    },
+    // composableView
+    {
+      path: '/composable-view',
+      name: 'ComposableView',
+      component: () => import('@/views/ComposableView.vue'),
+    },
   ],
 })
 

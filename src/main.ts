@@ -8,6 +8,7 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import App from './App.vue'
 import router from './router'
 import globalProperties from './config/globalProperties'
+import globalDirectives from './directives/globalDirectives'
 
 const app = createApp(App)
 
@@ -15,6 +16,7 @@ app.config.errorHandler = (err) => {
   console.error(err)
 }
 app.use(globalProperties)
+app.use(globalDirectives)
 
 const pinia = createPinia()
 // pinia 持久化插件
