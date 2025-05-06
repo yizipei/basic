@@ -38,13 +38,13 @@ onMounted(() => {
 <template>
   <h1>x: {{ x }} y: {{ y }}</h1>
   <div class="container">
-    <div class="item" ref="item" v-for="item in 12">
+    <div v-for="item in 12" ref="item" :key="item" class="item">
       <div class="sub-item">{{ item }}</div>
     </div>
   </div>
   <!--  <div v-drag>23</div>-->
   <!--  <br>-->
-  <!--  <input type="text" v-focus v-model="ipt" />-->
+  <input v-model="ipt" v-drag type="text" />
   <!--  <h1 v-if="error">error</h1>-->
   <!--  <h1 v-else-if="data">{{ data }}</h1>-->
   <!--  <h1 v-else>loading</h1>-->

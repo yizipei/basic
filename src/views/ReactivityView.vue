@@ -1,6 +1,4 @@
 <script lang="tsx">
-import { defineComponent, nextTick, onMounted, reactive, ref, toRef, toRefs, type Ref } from 'vue'
-
 export default {
   setup() {
     const year = ref<number | string>(2025)
@@ -12,7 +10,7 @@ export default {
 
     const domRef = ref<HTMLDivElement>()
 
-    const book: Book = reactive({
+    const book: IBook = reactive({
       author: 'jls',
       cover: 'none',
       id: 1,

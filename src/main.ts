@@ -1,5 +1,6 @@
 import 'normalize.css'
 import './assets/main.css'
+import 'animate.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

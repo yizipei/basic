@@ -64,6 +64,12 @@ const router: Router = createRouter({
       name: 'ComposableView',
       component: () => import('@/views/ComposableView.vue'),
     },
+    // transitionView
+    {
+      path: '/transition-view',
+      name: 'TransitionView',
+      component: () => import('@/views/TransitionView.vue'),
+    },
   ],
 })
 

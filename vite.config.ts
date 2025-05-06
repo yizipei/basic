@@ -18,6 +18,7 @@ export default defineConfig(({ command, mode }) => {
     server: {
       port: 6001,
       host: '0.0.0.0',
+      open: false,
       proxy: {
         [env.VITE_BASE_SERVE]: {
           target: env.VITE_BASE_URL,
@@ -30,7 +31,15 @@ export default defineConfig(({ command, mode }) => {
       },
     },
     plugins: [
-      vue(),
+      vue({
+        template: {
+          compilerOptions: {
+            isCustomElement: (tag) => {
+              return tag.startsWith('yi-')
+            },
+          },
+        },
+      }),
       vueJsx(),
       // vueDevTools(),
       AutoImport({
