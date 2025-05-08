@@ -1,5 +1,6 @@
 <script setup lang="ts">
 let url = '111' // ref('https://jsonplaceholder.typicode.com/todos/1')
+import { vRed, vDrag } from '@/directives/globalDirectives'
 
 const { data, error } = useFetch(() => url)
 setTimeout(() => {
@@ -48,6 +49,7 @@ onMounted(() => {
   <!--  <h1 v-if="error">error</h1>-->
   <!--  <h1 v-else-if="data">{{ data }}</h1>-->
   <!--  <h1 v-else>loading</h1>-->
+  <p v-red v-drag>123</p>
 </template>
 <style lang="less">
 .container {

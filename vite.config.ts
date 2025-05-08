@@ -8,6 +8,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { VantResolver } from '@vant/auto-import-resolver'
 import postcsspxtoviewport8plugin from 'postcss-px-to-viewport-8-plugin'
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig(({ command, mode }) => {
@@ -51,6 +52,7 @@ export default defineConfig(({ command, mode }) => {
       Components({
         resolvers: [VantResolver()],
       }),
+      tailwindcss(),
     ],
     resolve: {
       alias: {

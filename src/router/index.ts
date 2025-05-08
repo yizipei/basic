@@ -70,6 +70,12 @@ const router: Router = createRouter({
       name: 'TransitionView',
       component: () => import('@/views/TransitionView.vue'),
     },
+    // requestFrame
+    {
+      path: '/request-frame',
+      name: 'RequestFrame',
+      component: () => import('@/views/RequestFrame.vue'),
+    },
   ],
 })
 
