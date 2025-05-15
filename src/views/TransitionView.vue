@@ -38,7 +38,7 @@ ref(false)
 </template>
 
 <style scoped lang="less">
-.demo {
+.demo33 {
   width: 30px;
   background-color: blue;
   transition: width 2s ease 1s;

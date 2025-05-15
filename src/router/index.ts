@@ -76,6 +76,12 @@ const router: Router = createRouter({
       name: 'RequestFrame',
       component: () => import('@/views/RequestFrame.vue'),
     },
+    // tailWind
+    {
+      path: '/tail-wind',
+      name: 'TailWind',
+      component: () => import('@/views/TailWind.vue'),
+    },
   ],
 })
 
