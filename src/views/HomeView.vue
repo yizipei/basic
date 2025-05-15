@@ -30,15 +30,6 @@ onMounted(() => {
 
 <template>
   <div>{{ count }}</div>
-  <van-button type="primary" @click="router.push({ name: 'TemplateSyntax' })">
-    template syntax
-  </van-button>
-  <van-button type="success" @click="router.push({ name: 'ReactivityView' })">
-    reactivity view
-  </van-button>
-  <van-button type="warning" @click="router.push({ name: 'ComputedView' })">
-    computed page
-  </van-button>
 </template>
 
 <style lang="less" scoped></style>
