@@ -29,10 +29,16 @@ defineExpose({
       'is-block': props.block,
     }"
     :type="props.nativeType"
-    :disabled="props.disabled"
+    :disabled="props.disabled || props.loading"
     :autofocus="props.autofocus"
   >
-    <slot></slot>
+    <template v-if="props.loading">
+      <Icon icon="icon-yansetongdao " color="#fff" spin />
+    </template>
+    <template v-else>
+      <slot></slot>
+      <Icon v-if="props.icon" :icon="props.icon" style="margin-left: 6px" />
+    </template>
   </button>
 </template>
 <style>

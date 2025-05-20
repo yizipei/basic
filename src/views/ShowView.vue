@@ -3,10 +3,9 @@ import ButtonView from './button/ButtonView.vue'
 import CollapseView from './collapse/CollapseView.vue'
 import CollapseItem from './collapse/CollapseItem.vue'
 import type { CollapseItemProps } from './collapse/types'
-import Icon from '@/components/Icon.vue'
 
 const el = useTemplateRef<InstanceType<typeof ButtonView>>('button')
-
+const a = 1
 const collapseData: Omit<CollapseItemProps, 'activeNames'>[] = [
   {
     title: '标题1',
@@ -25,9 +24,10 @@ onMounted(() => {})
 </script>
 <template>
   <Icon icon="icon-tongji1" size="100" />
+
   <div>
-    <ButtonView ref="button" type="primary">button</ButtonView>
-    <ButtonView ref="button" type="danger">button</ButtonView>
+    <ButtonView ref="button" loading type="primary">button</ButtonView>
+    <ButtonView ref="button" icon="icon-dizhipipei">button</ButtonView>
     <ButtonView ref="button" type="info">button</ButtonView>
     <ButtonView ref="button" type="success">button</ButtonView>
     <ButtonView ref="button" type="warning">button</ButtonView>

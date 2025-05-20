@@ -41,14 +41,15 @@ export default defineConfig(({ command, mode }) => {
       }),
       vueJsx(),
       // vueDevTools(),
+      Components({
+        dts: true,
+        resolvers: [],
+      }),
       AutoImport({
         imports: ['vue', 'vue-router', 'pinia'],
         resolvers: [],
         packagePresets: ['es-toolkit'],
         dirs: ['./src/composables/**'],
-      }),
-      Components({
-        resolvers: [],
       }),
     ],
     resolve: {
