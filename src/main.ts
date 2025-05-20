@@ -9,6 +9,7 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import App from './App.vue'
 import router from './router'
 import globalProperties from './config/globalProperties'
+import '@/assets/iconfont.js'
 
 const app = createApp(App)
 
