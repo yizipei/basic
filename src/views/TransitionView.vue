@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import AnimateCss from '@/components/AnimateCss.vue'
-
 const show = ref(false)
 const show2 = ref(false)
 const show3 = ref(false)
@@ -9,6 +7,7 @@ const type = ref('1')
 ref(false)
 </script>
 <template>
+  <VanButton>123</VanButton>
   <van-button type="primary" @click="show = !show">click</van-button>
   <Transition name="fade">
     <p v-if="show">Manju Patra</p>
