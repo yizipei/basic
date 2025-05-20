@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["pinia-plugin-persistedstate", "./components.d.ts"],
+    "types": ["pinia-plugin-persistedstate"],
     "jsx": "preserve",
     "jsxImportSource": "vue"
   },
@@ -12,5 +12,5 @@
     {
       "path": "./tsconfig.app.json"
     }
-  ],
+  ]
 }
