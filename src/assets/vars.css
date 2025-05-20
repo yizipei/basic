@@ -1,0 +1,172 @@
+:root {
+  color-scheme: light;
+
+  /* ====================== 颜色变量 ====================== */
+  --yi-color-white: #ffffff; /* 白色 */
+  --yi-color-black: #000000; /* 黑色 */
+
+  /* 主题色 */
+  --yi-color-primary: #409eff; /* 主色 */
+  --yi-color-primary-light-3: #79bbff; /* 主色浅色变体 */
+  --yi-color-primary-light-5: #9fceff;
+  --yi-color-primary-light-7: #c5e1ff;
+  --yi-color-primary-light-8: #d8ebff;
+  --yi-color-primary-light-9: #ebf5ff;
+  --yi-color-primary-dark-2: #337ecc; /* 主色深色变体 */
+
+  /* 状态色 */
+  --yi-color-success: #67c23a; /* 成功色 */
+  --yi-color-success-light-3: #94d475;
+  --yi-color-success-light-5: #b3e09c;
+  --yi-color-success-light-7: #d1ecc4;
+  --yi-color-success-light-8: #e0f2d7;
+  --yi-color-success-light-9: #eff9eb;
+  --yi-color-success-dark-2: #529b2e;
+
+  --yi-color-warning: #e6a23c; /* 警告色 */
+  --yi-color-warning-light-3: #edbd76;
+  --yi-color-warning-light-5: #f2d09d;
+  --yi-color-warning-light-7: #f7e3c4;
+  --yi-color-warning-light-8: #faece0;
+  --yi-color-warning-light-9: #fcf5eb;
+  --yi-color-warning-dark-2: #b88130;
+
+  --yi-color-danger: #f56c6c; /* 危险色 */
+  --yi-color-danger-light-3: #f89898;
+  --yi-color-danger-light-5: #fab5b5;
+  --yi-color-danger-light-7: #fcd3d3;
+  --yi-color-danger-light-8: #fde1e1;
+  --yi-color-danger-light-9: #fef0f0;
+  --yi-color-danger-dark-2: #c45656;
+
+  --yi-color-error: #f56c6c; /* 错误色 */
+  --yi-color-error-light-3: #f89898;
+  --yi-color-error-light-5: #fab5b5;
+  --yi-color-error-light-7: #fcd3d3;
+  --yi-color-error-light-8: #fde1e1;
+  --yi-color-error-light-9: #fef0f0;
+  --yi-color-error-dark-2: #c45656;
+
+  --yi-color-info: #909399; /* 信息色 */
+  --yi-color-info-light-3: #b1b3b7;
+  --yi-color-info-light-5: #c7c9cc;
+  --yi-color-info-light-7: #ddecdf;
+  --yi-color-info-light-8: #e8eaeb;
+  --yi-color-info-light-9: #f3f4f5;
+  --yi-color-info-dark-2: #73757a;
+
+  --yi-fill-color-light: #f5f80c;
+  --yi-fill-color-lighter: #fafafa;
+  --yi-fill-color-extra-light: #fafcff;
+  --yi-fill-color-dark: #ebedf0;
+  --yi-fill-color-darker: #e6e8eb;
+  --yi-fill-color-blank: #ffffff;
+
+  /* 背景/文本色 */
+  --yi-bg-color: #ffffff; /* 背景色 */
+  --yi-bg-color-page: #f2f3f5; /* 页面背景色 */
+  --yi-bg-color-overlay: #ffffff; /* 覆盖层背景色 */
+  --yi-text-color-primary: #303133; /* 主文本色 */
+  --yi-text-color-regular: #606266; /* 常规文本色 */
+  --yi-text-color-secondary: #909399; /* 次要文本色 */
+  --yi-text-color-placeholder: #a8abb2; /* 占位符文本色 */
+  --yi-text-color-disabled: #c0c4cc; /* 禁用文本色 */
+  --yi-disabled-bg-color: var(--yi-fill-color-light);
+  --yi-disabled-text-color: var(--yi-text-color-placeholder);
+  --yi-disabled-border-color: var(--yi-border-color-light);
+
+  /* ====================== 边框变量 ====================== */
+  --yi-border-color: #dcdfe6; /* 边框基础色 */
+  --yi-border-color-light: #e4e7ed; /* 浅色边框 */
+  --yi-border-color-lighter: #ebeef5; /* 更浅边框 */
+  --yi-border-color-extra-light: #f2f6fc; /* 极浅边框 */
+  --yi-border-color-dark: #d4d7de; /* 深色边框 */
+  --yi-border-color-darker: #cdd0d6; /* 更深边框 */
+  --yi-border-color-hover: #c0c4cc; /* 悬停边框色 */
+  --yi-border-width: 1px; /* 边框宽度 */
+  --yi-border-style: solid; /* 边框样式 */
+  --yi-border: var(--yi-border-width) var(--yi-border-style) var(--yi-border-color); /* 复合边框 */
+  --yi-border-radius-base: 4px; /* 基础圆角 */
+  --yi-border-radius-small: 2px; /* 小圆角 */
+  --yi-border-radius-round: 20px; /* 圆形圆角 */
+  --yi-border-radius-circle: 100%; /* 圆形 */
+
+  /* ====================== 字体变量 ====================== */
+  --yi-font-family:
+    'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑',
+    Arial, sans-serif; /* 字体家族 */
+  --yi-font-size-extra-large: 20px; /* 超大字体 */
+  --yi-font-size-large: 18px; /* 大字体 */
+  --yi-font-size-medium: 16px; /* 中等字体 */
+  --yi-font-size-base: 14px; /* 基础字体 */
+  --yi-font-size-small: 13px; /* 小字体 */
+  --yi-font-size-extra-small: 12px; /* 超小字体 */
+  --yi-font-weight-primary: 500; /* 主字体粗细 */
+  --yi-font-line-height-primary: 24px; /* 主行高 */
+
+  /* ====================== 阴影变量 ====================== */
+  --yi-box-shadow:
+    0px 12px 32px 4px rgba(0, 0, 0, 0.04), 0px 8px 20px rgba(0, 0, 0, 0.08); /* 基础阴影 */
+  --yi-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, 0.12); /* 浅色阴影 */
+  --yi-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, 0.12); /* 更浅阴影 */
+  --yi-box-shadow-dark:
+    0px 16px 48px 16px rgba(0, 0, 0, 0.08), 0px 12px 32px rgba(0, 0, 0, 0.12),
+    0px 8px 16px -8px rgba(0, 0, 0, 0.16); /* 深色阴影 */
+
+  /* ====================== 过渡变量 ====================== */
+  --yi-transition-duration: 0.3s; /* 常规过渡时长 */
+  --yi-transition-duration-fast: 0.2s; /* 快速过渡时长 */
+  --yi-transition-function-ease-in-out-bezier: cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* 缓入缓出函数 */
+  --yi-transition-function-fast-bezier: cubic-bezier(0.23, 1, 0.32, 1); /* 快速过渡函数 */
+  --yi-transition-all: all var(--yi-transition-duration)
+    var(--yi-transition-function-ease-in-out-bezier); /* 全属性过渡 */
+  --yi-transition-fade: opacity var(--yi-transition-duration)
+    var(--yi-transition-function-fast-bezier); /* 淡入淡出过渡 */
+  --yi-transition-md-fade:
+    transform var(--yi-transition-duration) var(--yi-transition-function-fast-bezier),
+    opacity var(--yi-transition-duration) var(--yi-transition-function-fast-bezier); /* 移动+淡入过渡 */
+  --yi-transition-fade-linear: opacity var(--yi-transition-duration-fast) linear; /* 线性淡入过渡 */
+  --yi-transition-border: border-color var(--yi-transition-duration-fast)
+    var(--yi-transition-function-ease-in-out-bezier); /* 边框过渡 */
+  --yi-transition-box-shadow: box-shadow var(--yi-transition-duration-fast)
+    var(--yi-transition-function-ease-in-out-bezier); /* 阴影过渡 */
+  --yi-transition-color: color var(--yi-transition-duration-fast)
+    var(--yi-transition-function-ease-in-out-bezier); /* 颜色过渡 */
+
+  /* ====================== 布局与尺寸 ====================== */
+  --yi-component-size-large: 40px; /* 大型组件尺寸 */
+  --yi-component-size: 32px; /* 常规组件尺寸 */
+  --yi-component-size-small: 24px; /* 小型组件尺寸 */
+  --yi-index-normal: 1; /* 常规层级 */
+  --yi-index-top: 1000; /* 顶部层级 */
+  --yi-index-popper: 2000; /* 弹出层层级 */
+
+  /* ====================== 扩展变量 ====================== */
+  --yi-color-primary-rgb: 64, 158, 255; /* 主色 RGB 值（供 JS/混合色使用） */
+  --yi-color-success-rgb: 103, 194, 58;
+  --yi-color-warning-rgb: 230, 162, 60;
+  --yi-color-danger-rgb: 245, 108, 108;
+  --yi-color-error-rgb: 245, 108, 108;
+  --yi-color-info-rgb: 144, 147, 153;
+
+  /* ====================== 按钮变量 ====================== */
+  --yi-button-font-weight: var(--yi-font-weight-primary);
+  --yi-button-border-color: var(--yi-border-color);
+  --yi-button-bg-color: var(--yi-fill-color-blank);
+  --yi-button-text-color: var(--yi-text-color-regular);
+  --yi-button-disabled-text-color: var(--yi-disabled-text-color);
+  --yi-button-disabled-bg-color: var(--yi-fill-color-blank);
+  --yi-button-disabled-border-color: var(--yi-border-color-light);
+  --yi-button-disabled-border-color: var(--yi-border-color-light);
+  --yi-button-divide-border-color: rgba(255, 255, 255, 0.5);
+  --yi-button-hover-text-color: var(--yi-color-primary);
+  --yi-button-hover-bg-color: var(--yi-color-primary-light-9);
+  --yi-button-hover-border-color: var(--yi-color-primary-light-7);
+  --yi-button-active-text-color: var(--yi-button-hover-text-color);
+  --yi-button-active-border-color: var(--yi-color-primary);
+  --yi-button-active-bg-color: var(--yi-button-hover-bg-color);
+  --yi-button-outline-color: var(--yi-color-primary-light-5);
+  --yi-button-hover-link-text-color: var(--yi-text-color-secondary);
+  --yi-button-active-color: var(--yi-text-color-primary);
+}

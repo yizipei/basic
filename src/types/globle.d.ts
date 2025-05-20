@@ -3,4 +3,5 @@ declare module 'vue' {
     $pxToVw: (value?: string | number, designWidth?: number) => string
   }
 }
+declare module 'postcss-each'
 export {}

@@ -8,6 +8,7 @@ import router from '@/router'
 const counterStore = useCounterStore()
 const { count } = storeToRefs(counterStore)
 const { increment } = counterStore
+import ButtonView from '@/views/button/ButtonView.vue'
 
 const getData = async () => {
   const res = await request.post({
@@ -23,13 +24,13 @@ const getData = async () => {
 }
 
 onMounted(() => {
-  getData()
+  // getData()
   console.log('HomeView')
 })
 </script>
 
 <template>
-  <div>{{ count }}</div>
+  <ButtonView>1233</ButtonView>
 </template>
 
 <style lang="less" scoped></style>

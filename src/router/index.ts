@@ -18,12 +18,12 @@ const router: Router = createRouter({
     //   component: () => import('../views/AboutView.vue'),
     // },
     {
-      path: '/template-list',
-      name: 'templateList',
+      path: '/button-view',
+      name: 'buttonView',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/TemplateListView.vue'),
+      component: () => import('../views/button/ButtonView.vue'),
     },
     {
       path: '/demo-view',
@@ -32,6 +32,11 @@ const router: Router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/DemoView.vue'),
+    },
+    {
+      path: '/show',
+      name: 'showView',
+      component: () => import('../views/ShowView.vue'),
     },
   ],
 })
