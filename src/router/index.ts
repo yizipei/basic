@@ -38,6 +38,11 @@ const router: Router = createRouter({
       name: 'showView',
       component: () => import('../views/ShowView.vue'),
     },
+    {
+      path: '/tooltip',
+      name: 'tooltip',
+      component: () => import('../views/TooltipView.vue'),
+    },
   ],
 })
 
