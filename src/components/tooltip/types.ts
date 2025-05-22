@@ -1,16 +1,15 @@
+import type { Options, Placement } from '@popperjs/core'
+
 export interface TooltipProps {
-  content: string
+  content?: string
   disabled?: boolean
-  placement?: 'top' | 'bottom' | 'left' | 'right'
+  placement?: Placement
   delay?: number
   offset?: number
   trigger?: 'hover' | 'click' | 'focus' | 'manual'
   visible?: boolean
-  hideDelay?: number
-  showDelay?: number
-  arrow?: boolean
-  arrowOffset?: number
-  arrowColor?: string
-  arrowSize?: number
-  arrowShadow?: boolean
+  options?: Partial<Options>
+  transition?: 'fade' | 'slide'
+  openDelay?: number
+  closeDelay?: number
 }

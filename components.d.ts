@@ -15,6 +15,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     Tooltip: typeof import('./src/components/tooltip/Tooltip.vue')['default']
+    VanButton: typeof import('vant/es')['Button']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
 }

@@ -231,6 +231,7 @@ declare global {
   const upperCase: typeof import('es-toolkit')['upperCase']
   const upperFirst: typeof import('es-toolkit')['upperFirst']
   const useAttrs: typeof import('vue')['useAttrs']
+  const useClickOutside: typeof import('./src/composables/useClickOutside')['default']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
   const useFetch: typeof import('./src/composables/fetch')['useFetch']
