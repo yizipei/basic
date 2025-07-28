@@ -37,11 +37,12 @@ const createPicture = () => {
   })
 }
 
-onMounted(() => {})
+onMounted(() => {
+  console.log(import.meta.env)
+})
 </script>
 <template>
-  <div class="top" @click="createPicture">123</div>
-  <div class="bottom">
+  <div>
     <Icon icon="123" size="qwe" color="#333"></Icon>
     <div>
       <ButtonView ref="button" loading type="primary">button</ButtonView>

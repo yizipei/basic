@@ -27,6 +27,7 @@ export default defineConfigWithVueTs(
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/ban-ts-comment': 'off',
       'vue/multi-word-component-names': 'off',
+      'prefer-const': 'warn',
     },
     languageOptions: {
       globals: {
